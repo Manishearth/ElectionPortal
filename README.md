@@ -1,4 +1,4 @@
-Some really bad PHP code I wrote for an election portal. Does LDAP checking of roll numbers.
+Some really bad PHP code I wrote for an election portal. Does LDAP checking of roll numbers to check department.
 
 To use, place ldap.php on an inside-iit server (home.iitb), and change the url accordingly (the reverse proxy), eg `http://home.iitb.ac.in/~manishg/Stuff/ldap.php?user=$euser&pass=$epass`
 
