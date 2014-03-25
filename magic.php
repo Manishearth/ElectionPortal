@@ -1,7 +1,7 @@
 <?php
 $user=$_REQUEST['user'];$pass=$_REQUEST['pass'];$selection=$_REQUEST['selection'];
 
-$file_db = new PDO('sqlite:phy.db');
+$file_db = new PDO('sqlite:phy.db'); // Or whatever your db is
 if($user =="" || $pass==""){
 die("Please enter a username and password");
 }

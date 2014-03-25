@@ -8,3 +8,17 @@ Modify index.php to suit your needs. Ensure you modify the list of allowed candi
 Also, modify the arrays in magic.php to check for roll numbers, branch change'd people, etc.
 
 Also modify the ou=PHY to match your required LDAP ou.
+
+
+`phy.db` was an sqlite database with the following schema:
+
+```
+0|id|auto_increment|0||1
+1|ldap|text|0||0
+2|roll|text|0||0
+3|vote|text|0||0
+4|fake|int|0|0|0
+```
+
+
+"fake" was just a way of marking non-department voters for later review.

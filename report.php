@@ -1,6 +1,6 @@
 <?php
-if($_REQUEST['key']!='ehrenfest'){
-die("Access denied");
+if($_REQUEST['key']!='ehrenfest'){ // SOme key to prevent access
+  die("Access denied");
 }
 $db = new PDO('sqlite:phy.db');
 $sth = $db->prepare("SELECT COUNT(*) as count,vote from votes where fake = 0 group by vote;");
