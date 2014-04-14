@@ -11,8 +11,8 @@ die("Please vote for a candidate, or choose 'none'");
 }
 function phy($str){
 $str=strtoupper($str);
-$init=array("12026","13026"); // What roll numbers start with
-$rolls=array("12D070012","121030108","120111003","120500027"); // branch changes
+$init=array("12026","13026","..."); // What roll numbers start with
+$rolls=array("something","something"); // branch changes
 $starts=array_merge($init,$rolls);
 foreach($starts as $k => $v){
   if(strpos($str,$v)===0){
